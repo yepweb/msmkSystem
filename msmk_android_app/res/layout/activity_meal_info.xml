@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"  
+    android:focusableInTouchMode="true">
+    <!-- 商品名称 -->
+
+    <TextView
+        android:id="@+id/m_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        tools:ignore="SpUsage"
+        android:textColor="@color/counter_text_bg"/>
+
+	<!-- 商品图片-->
+    <ImageView
+        android:id="@+id/m_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/m_name"
+        android:paddingTop="20dp"/>
+    
+	<!-- 商家名字-->
+    <TextView
+        android:id="@+id/sssj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sssj"
+        android:layout_below="@+id/m_img"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/b_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sssj"
+        android:layout_below="@+id/m_img"
+        android:textSize="25sp"
+        android:textColor="@color/list_background"
+        android:paddingTop="6dp"
+        android:paddingLeft="5dp"/>
+
+	<!-- 商品价格 -->
+
+    <TextView
+        android:id="@+id/jg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jg"
+        android:layout_below="@+id/sssj"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/m_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/jg"
+        android:layout_below="@+id/sssj"
+        android:textSize="25sp"
+        android:textColor="@color/list_background"
+        android:paddingTop="6dp"
+        android:paddingLeft="5dp"/>
+    <!-- 赞和踩 -->
+
+    <ImageButton
+        android:id="@+id/zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jg"
+        android:onClick="zan"
+        android:src="@drawable/zan_button"
+        android:text="@string/zan"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/m_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/zan"
+        android:layout_below="@+id/jg"
+        android:textSize="25sp"/>
+
+	<ImageButton
+	    android:id="@+id/cai"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/jg"
+	    android:layout_toRightOf="@+id/m_zan"
+	    android:onClick="cai"
+	    android:src="@drawable/cai_button"
+	    android:text="@string/cai"
+	    tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/m_cai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cai"
+        android:layout_below="@+id/jg"
+        android:textSize="25sp"/>
+    
+    <!-- 购买按钮-->
+
+    <ImageButton
+        android:id="@+id/buy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m_other"
+        android:onClick="buyOnClick"
+        android:src="@drawable/buy_button"
+        tools:ignore="ContentDescription"/>
+
+
+    <!-- 餐品介绍 -->
+     <TextView
+         android:id="@+id/m_other"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/zan"
+         android:textSize="25sp"/>
+     
+     <!-- 商品评论-->
+
+     <EditText
+         android:id="@+id/m_comment"
+         android:layout_width="400sp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/buy"
+         android:hint="@string/srpl" />
+
+     <Button
+         android:id="@+id/post_eva"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/plinfo"
+         android:onClick="evaOnClick"
+         android:layout_toRightOf="@+id/m_comment"
+         android:layout_below="@+id/buy"
+         android:layout_alignParentRight="true"/>
+     <!-- 评论列表 -->
+     <TextView
+         android:id="@+id/pl"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/pl"
+         android:layout_below="@+id/m_comment"
+         android:textSize="25sp"/>
+     <ListView 
+         android:id="@+id/evaList"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/pl">
+         
+     </ListView>
+
+     
+
+</RelativeLayout>

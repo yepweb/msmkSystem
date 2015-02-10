@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>order_API</title>
+</head>
+
+<body>
+	<form action="order_user_list.php" method="post" enctype="multipart/form-data">
+    u_name:<br/>
+    <input type="text" name="u_name"/><br/>
+	<input type="submit" value="查询该用户订单"/>
+	</form><br/>
+    
+     新建订单：
+     <form action="order_add.php" method="post" enctype="multipart/form-data">
+    m_id:<input type="text" name="m_id"/><br/>
+    u_name<input type="text" name="u_name"/><br/>
+	<input type="submit" value="增加订单"/>
+	</form><br/>
+</body>
+</html>

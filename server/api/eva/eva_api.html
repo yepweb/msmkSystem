@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>查询评论</title></title>
+</head>
+
+<body>
+	获取评论：POST：m_id
+	<form action="evaluate_list.php" method="post">
+	m_id:<input type="text" name="m_id"/><br/>
+	<input type="submit" value="查询"/>
+	</form><br/>
+	
+	评论功能：POST：m_id ,e_comment
+	<form action="eva_com_add.php" method="post">
+	m_id:<input type="text" name="m_id"/><br/>
+	m_comment:<input type="text" name="e_comment"/><br/>
+	<input type="submit" value="评论"/>
+	</form><br/>
+	
+	赞功能：POST：m_id
+	<form action="zan_add.php" method="post">
+	m_id:<input type="text" name="m_id"/><br/>
+	
+	<input type="submit" value="赞"/>
+	</form><br/>
+	
+	踩功能：POST：m_id
+	<form action="cai_add.php" method="post">
+	m_id:<input type="text" name="m_id"/><br/>
+	<input type="submit" value="踩"/>
+	</form><br/>
+	
+	显示某个饭菜赞和踩：POST：m_id
+	<form action="zan_cai_list.php" method="post">
+	m_id:<input type="text" name="m_id"/><br/>
+	<input type="submit" value="显示踩与赞"/>
+	</form><br/>
+    
+    显示赞最多的饭菜：
+    <form action="eva_zan_top.php" method="post">
+	<input type="submit" value="显示赞最多"/>
+	</form><br/>
+  
+    
+</body>
+</html>

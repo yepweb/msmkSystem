@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reInfo" />
+
+   <EditText
+        android:id="@+id/u_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/userInfo"/>
+
+   <EditText
+       android:id="@+id/u_pwd"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/pwdInfo"
+       android:password="true"
+       tools:ignore="Deprecated" />
+
+    <EditText
+        android:id="@+id/u_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/addressInfo"/>
+     <EditText
+        android:id="@+id/u_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phoneInfo" 
+        android:inputType="phone"/>
+      <EditText
+        android:id="@+id/u_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/otherInfo"/>
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    tools:ignore="Deprecated" >
+
+      <Button
+          android:id="@+id/register"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:gravity="right"
+          android:text="@string/register" 
+          android:onClick="register"/>
+
+      </RelativeLayout>
+
+</LinearLayout>

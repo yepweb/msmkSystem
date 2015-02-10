@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>商家表测试</title>
+</head>
+
+<body>
+	
+	根据b_id获取b_name： POST：b_id
+	<form action="bus_b_name.php" method="post">
+	b_id:<input type="text" name="b_id"/><br/>
+	<input type="submit" value="获取商家名字"/>
+	</form><br/>
+	获取商家列表
+	<form action="bus_list.php" method="post">
+	<input type="submit" value="获取商家列表"/>
+	</form><br/>
+	
+	获取指定商家的菜列表： POST：b_id
+	<form action="bus_meal_list.php" method="post">
+	b_id:<input type="text" name="b_id"/><br/>
+	<input type="submit" value="获取指定商家饭菜列表"/>
+	</form><br/>
+	
+	
+	
+</body>
+</html>

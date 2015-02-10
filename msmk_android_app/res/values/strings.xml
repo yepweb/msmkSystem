@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">美食美客</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+    <!-- 侧滑菜单标题 -->
+    <string-array name="nav_drawer_items">
+        <item >主页</item>
+        <item >商家</item>
+        <item >排行</item>
+        <item >阅读</item>
+        <item >美食</item>
+        <item >用户</item>
+    </string-array>
+    
+    <!-- 侧滑菜单标志 -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+    
+    <!-- 登陆页面文字 -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="loginInfo">登陆</string>
+    <string name="logoutInfo">注销</string>
+    <string name="userNameInfo">用户名</string>
+    <string name="titleinfo">美食美客-爱心校园点餐系统</string>
+    
+    <!-- 注册页面文字 -->
+     <string name="reInfo">美食美客-爱心校园点餐系统 注册</string>
+     <string name="userInfo">用户名</string>
+     <string name="pwdInfo">密码</string>
+     <string name="addressInfo">地址</string>
+     <string name="phoneInfo">电话</string>
+     <string name="otherInfo">备注</string>
+     <string name="register">注册</string>
+     
+     <!-- meal详细页面静态文字 -->
+
+     <string name="sssj">所属商家:</string>
+     <string name="jg">价格:</string>
+     <string name="zan">赞:</string>
+     <string name="cai">踩:</string>
+     <string name="pl">评论:</string>
+     <string name="srpl">请输入评论:</string>
+     <string name="plinfo">评论:</string>
+     <string name="gm">购买</string>
+     
+     <!-- 用户餐品页面 -->
+     <string name="dqyh">当前登陆用户是:</string>
+     <string name="ydcp">已经点的餐品:</string>
+
+     
+     <!-- 商家页面 -->
+	 <string name="sjmz">商家名字:</string>
+	 <string name="sjdz">商家地址:</string>
+	 <string name="sjdh">商家电话:</string>
+	 <string name="sjjs">商家介绍:</string>
+	 
+	 
+	 
+</resources>

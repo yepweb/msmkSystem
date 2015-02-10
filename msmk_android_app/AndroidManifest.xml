@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.slidingmenu"
+    android:versionCode="1"
+    android:versionName="1.0" xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" 
+        tools:ignore="OldTargetApi"/>
+    <application
+        android:name="com.zhangyongcun.unil.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_home"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- 第一个Activity -->
+        <activity
+            android:name="com.zhangyongcun.msmk.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 注册页面Activity -->>
+        <activity
+            android:name="com.zhangyongcun.msmk.ReActivity"
+            android:label="@string/app_name" 
+            >
+            
+        </activity>
+        <!-- 新闻详细页面Activity -->
+        <activity 
+            android:name="com.zhangyongcun.msmk.NewsActivity"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- meal详细页面Activity -->
+        <activity 
+            android:name="com.zhangyongcun.msmk.MealActivity"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- 指定商家的mealActivity -->
+        <activity 
+            android:name="com.zhangyongcun.msmk.BusMealActivity"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- 腾讯mta统计需要的权限 -->
+       <meta-data android:name="TA_APPKEY" android:value="AG8V1LG18SYH" />
+       <meta-data  android:name="InstallChannel" android:value="play" />
+        
+    </application>
+    
+   <!-- 网络和内存卡访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" tools:ignore="ManifestOrder"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+</manifest>

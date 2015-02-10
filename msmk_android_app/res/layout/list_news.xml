@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow tools:ignore="UselessLeaf,UselessParent" >
+    	
+         <TextView
+            android:id="@+id/n_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/n_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+        
+        
+    </TableRow>
+
+</TableLayout>
